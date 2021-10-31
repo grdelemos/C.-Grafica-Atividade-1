@@ -42,9 +42,6 @@ void OpenGLWindow::initializeGL() {
   abcg::glClearColor(0, 0, 0, 1);
   abcg::glClear(GL_COLOR_BUFFER_BIT);
 
-  // Start pseudo-random number generator
-  m_randomEngine.seed(
-      std::chrono::steady_clock::now().time_since_epoch().count());
 }
 
 void OpenGLWindow::paintGL() {
