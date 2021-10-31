@@ -1,7 +1,6 @@
 #ifndef OPENGLWINDOW_HPP_
 #define OPENGLWINDOW_HPP_
 
-#include <random>
 #include <glm/vec3.hpp>
 #include "abcg.hpp"
 
@@ -22,7 +21,6 @@ class OpenGLWindow : public abcg::OpenGLWindow {
   int m_viewportWidth{};
   int m_viewportHeight{};
 
-  std::default_random_engine m_randomEngine;
 
   //Variáveis
   float scale{0.25};
@@ -34,7 +32,6 @@ class OpenGLWindow : public abcg::OpenGLWindow {
   std::array<glm::vec3, 2> m_vertexColors{glm::vec3{0.36f, 0.83f, 1.00f},
                                           glm::vec3{0.63f, 0.00f, 0.61f}};
   
-  abcg::ElapsedTimer m_elapsedTimer;
 
   void setupModel(int sides);
 };
